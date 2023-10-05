@@ -1,33 +1,33 @@
 <p align="center"><img width="70%" src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg"/></p>
 
 <div align="center">
-  <h1>CLOUD-101 📢</h1>
+  <h1>Cloud-101 📢</h1>
   <h3>Your College Newsfeed and Updates App</h3>
 </div>
 
 <div align="center">
 
-![GitHub contributors](https://img.shields.io/github/contributors/dscpesu/CLOUD-101?style=for-the-badge&color=blue)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/dscpesu/CLOUD-101?style=for-the-badge&color=brightgreen)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/dscpesu/CLOUD-101?style=for-the-badge&color=aqua)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/dscpesu/CLOUD-101?style=for-the-badge&color=blue)
-![GitHub language count](https://img.shields.io/github/languages/count/dscpesu/CLOUD-101?style=for-the-badge&color=brightgreen)
-![GitHub top language](https://img.shields.io/github/languages/top/dscpesu/CLOUD-101?style=for-the-badge&color=aqua)
-![GitHub last commit](https://img.shields.io/github/last-commit/dscpesu/CLOUD-101?style=for-the-badge&color=blue)
+![GitHub contributors](https://img.shields.io/github/contributors/dscpesu/Cloud-101?style=for-the-badge&color=blue)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/dscpesu/Cloud-101?style=for-the-badge&color=brightgreen)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/dscpesu/Cloud-101?style=for-the-badge&color=aqua)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/dscpesu/Cloud-101?style=for-the-badge&color=blue)
+![GitHub language count](https://img.shields.io/github/languages/count/dscpesu/Cloud-101?style=for-the-badge&color=brightgreen)
+![GitHub top language](https://img.shields.io/github/languages/top/dscpesu/Cloud-101?style=for-the-badge&color=aqua)
+![GitHub last commit](https://img.shields.io/github/last-commit/dscpesu/Cloud-101?style=for-the-badge&color=blue)
 ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
-![Github Repo Size](https://img.shields.io/github/repo-size/dscpesu/CLOUD-101?style=for-the-badge&color=aqua)
+![Github Repo Size](https://img.shields.io/github/repo-size/dscpesu/Cloud-101?style=for-the-badge&color=aqua)
 
 </div>
 
 ---
 
-## 🔴 Welcome to CLOUD-101!
+## 🔴 Welcome to Cloud-101!
 
-Welcome to CLOUD-101, your ultimate guide to cloud computing. Whether you're a student, IT enthusiast, or just curious about the world of cloud computing, CLOUD-101 has got you covered! 🎓📢
+Welcome to Cloud-101, your ultimate guide to cloud computing. Whether you're a student, IT enthusiast, or just curious about the world of cloud computing, Cloud-101 has got you covered! 🎓📢
 
 ## Key Features
 
-CLOUD-101 is a generalized repository comprising various projects designed to introduce you to the world of cloud computing. Here are some key features:
+Cloud-101 is a generalized repository comprising various projects designed to introduce you to the world of cloud computing. Here are some key features:
 
 1. **Diverse Cloud Projects:**
 
@@ -51,13 +51,13 @@ CLOUD-101 is a generalized repository comprising various projects designed to in
 
 **Purpose:**
 
-CLOUD-101 aims to democratize cloud computing education and provide a one-stop resource for individuals interested in learning about and working with cloud technologies.
+Cloud-101 aims to democratize cloud computing education and provide a one-stop resource for individuals interested in learning about and working with cloud technologies.
 
 ## 🧮 How to Contribute
 
 Ready to make your first open-source contribution? Here's how:
 
-1. Explore the [CLOUD-101 Repository](https://github.com/dscpesu/CLOUD-101) to discover ongoing projects and issues.
+1. Explore the [Cloud-101 Repository](https://github.com/dscpesu/Cloud-101) to discover ongoing projects and issues.
 
 2. Comment on an issue you want to work on, and await assignment by our team.
 
@@ -101,8 +101,8 @@ A big shoutout to our wonderful contributors. Every contribution, no matter how 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-<a href="https://github.com/dscpesu/CLOUD-101/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=dscpesu/CLOUD-101" />
+<a href="https://github.com/dscpesu/Cloud-101/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dscpesu/Cloud-101" />
 </a>
 
 <!-- markdownlint-enable -->
