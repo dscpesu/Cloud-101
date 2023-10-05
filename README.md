@@ -120,4 +120,17 @@ If you find this project helpful or learn something from it, consider giving it 
 
 If you have any questions or need support, feel free to reach out to us at **dsc@pes.edu**.
 
-<p align="
+<p align="center">
+  <a href="https://gdscpesu.com">
+    <img src="https://api.star-history.com/svg?repos=dscpesu/CLOUD-101&type=Date" alt="Star History Chart">
+  </a>
+</p>
+
+<div align="center">
+  <h1>Stay Informed with CLOUD-101! 📢</h1>
+</div>
+<br>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+<hr>
