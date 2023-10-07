@@ -30,4 +30,6 @@ cd dockerFileRegistry
 
 **3.** Work on the codes as per the issues assigned to you
 
+P.S: A sample docker for python has been done for you.
+
 
