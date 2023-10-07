@@ -15,7 +15,7 @@ Docker is a containerization platform that allows you to package applications an
 
 **5.** Go
 
-...Keep adding here as support for more languages 
+...Fill this section as you add support for more languages
 
 ## Contributing
 
