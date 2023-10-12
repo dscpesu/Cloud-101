@@ -14,7 +14,7 @@ EXPOSE 8080
 ENV APP_ENV=production
 
 # To compile the Java code
-RUN javac Main.javac
+RUN javac Main.java
 
 # Running the java code by creating the container
 CMD ["java", "Main"]
