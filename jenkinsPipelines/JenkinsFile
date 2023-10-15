@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    environment {
+        // Define Docker Hub credentials ID
+        DOCKERHUB_CREDENTIALS = 'dockerhub'
+        // Define the Docker Hub repository name
+        DOCKERHUB_REPO = 'adithyag17/docker-jenkins'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the source code
+                script {
+                    checkout scm
+                }
+            }
+        }
+
+        stage('Build and Push Docker Image') {
+            steps {
+                script {
+                    // Authenticate with Docker Hub
+                    withCredentials([usernamePassword(credentialsId: DOCKERHUB_CREDENTIALS, usernameVariable: 'adithyag17', passwordVariable: 'Adi2012@$')]) {
+                        // Log in to Docker Hub
+                        sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
+
+                        // Build and push the Docker image to Docker Hub
+                        sh "docker build -t $DOCKERHUB_REPO ."
+                        sh "docker push $DOCKERHUB_REPO"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Docker image successfully built and pushed!'
+        }
+        failure {
+            echo 'Failed to build or push the Docker image.'
+        }
+    }
+}
