@@ -18,6 +18,7 @@ Docker is a containerization platform that allows you to package applications an
 **6.** Node
 
 **7.** Optimized Dockerfile for Nextjs applications
+
 ...Fill this section as you add support for more languages
 
 ## Contributing
