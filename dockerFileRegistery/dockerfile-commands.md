@@ -66,6 +66,6 @@
 
 ## Additional Information
 
-The above mentioned commands are the most commonly used Dockerfile commands. Refer to the official Docker documentation for a comprehensive list with more detailed explanations.
+The above mentioned commands are the most commonly used Dockerfile commands. Do refer to the official Docker documentation for a more comprehensive list with detailed explanation.
 
 [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
