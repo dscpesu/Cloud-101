@@ -8,22 +8,25 @@ Before you begin, ensure you have the following installed:
 
 - Nginx: [Download and Install Nginx](http://nginx.org/en/docs/install.html).
 
-## Scheduling Algorithims
-**1.** Round-Robin
+## Key Features
 
-**2.** Fair
+This project offers a set of key features for load balancing:
 
-**3.** Any Custom one of your choice(you have to make)
+- **Dynamic Load Balancing**: Distribute incoming traffic across multiple servers in real-time.
+- **Customizable Load Balancing Policies**: Define your own load balancing policies to meet your specific requirements.
+- **High Availability**: Improve the availability of your applications by spreading the load across redundant servers.
+- **Health Checking**: Monitor the health of backend servers and automatically remove or add servers based on their status.
+- **Session Persistence**: Optionally support session persistence for applications that require it.
+- **Security**: Implement security measures to protect your load balancer, including SSL termination, access control, and rate limiting.
 
 ## Contributing
 
-**1.** Fork the main repo
+To contribute to this project, follow these steps:
 
-**2.** Clone the forked repo onto your system.
+**1. Fork the main repository on GitHub.**
 
-```terminal
-git clone https://github.com/<your_github_username>/Cloud-101/
-cd dockerFileRegistry
-```
+**2. Clone the forked repository onto your system.**
 
-**3.** Work on the codes as per the issues assigned to you
+```bash
+git clone https://github.com/<your_github_username>/Custom-Load-Balancer-Nginx.git
+cd Custom-Load-Balancer-Nginx
