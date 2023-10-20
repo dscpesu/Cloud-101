@@ -1,34 +1,65 @@
-#Stage 1: Building the application
+# Stage 1: Building the application
+FROM node:18-alpine AS deps
 
-# Use an official Node.js runtime as the base image
-FROM node:14-slim AS build
+# Install the necessary library for Alpine Linux
+RUN apk add --no-cache libc6-compat
 
-# Set the working directory in the container
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy the package.json file into the container
-COPY package*.json ./
+# Copy package.json and package-lock.json to the container
+COPY package.json package-lock.json ./
 
-# Copy all of the appliaction files into the container
+# Install production dependencies using npm
+RUN npm install --production
+
+# Stage 2: Build the project
+FROM node:18-alpine AS builder
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the installed node modules from the "deps" stage
+COPY --from=deps /app/node_modules ./node_modules
+
+# Copy the project files and code
 COPY . .
 
-# Install the dependencies and Build the Next.js app 
-RUN npm install && npm run build
+# Set an environment variable to disable Next.js telemetry
+ENV NEXT_TELEMETRY_DISABLED 1
 
+# Build the project using npm
+RUN npm run build
 
-# Stage 2: Create a smaller image for runtime
-FROM node:14-slim AS runtime
+# Stage 3: Prepare for running the application
+FROM node:18-alpine AS runner
 
-# Set the working directory in the runtime stage
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy only the necessary files from the build stage
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/package.json ./package.json
+# Set environment variables for Node.js and disable Next.js telemetry
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
 
-# Expose a port if your application serves content (change port number as required)
-EXPOSE 8080
+# Create a system group and user with specific UIDs and GIDs
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+# Copy the built .next directory from the "builder" stage
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+
+# Copy the installed node modules and package.json from the "builder" stage
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+# Set the user to "nextjs"
+USER nextjs
+
+# Expose port 3000
+EXPOSE 3000
+
+# Set the environment variable for the port
+ENV PORT 3000
 
 # Start the application
 CMD ["npm", "start"]
