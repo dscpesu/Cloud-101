@@ -13,7 +13,7 @@ COPY package.json package-lock.json ./
 # Install production dependencies using npm
 RUN npm install --production
 
-# Stage 2: Build the project
+# Stage 2: Building the project
 FROM node:18-alpine AS builder
 
 # Set the working directory to /app
