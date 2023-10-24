@@ -35,7 +35,7 @@ Before using this Jenkinsfile, ensure the following prerequisites:
      - This stage contains the following steps:
        - **Authentication**: It authenticates with Docker Hub using the credentials provided in `DOCKERHUB_CREDENTIALS`.
        - **Login**: It uses the `docker login` command to log in to Docker Hub with the provided credentials.
-       - **Build**: It uses the `docker build` command to build a Docker image from the Dockerfile in the current directory and tags it with the repository name specified in `DOCKERHUB_REPO`.
+       - **Build**: It uses the `docker build` command to build a Docker image from the Dockerfile in the current directory and tags it with the repository name specified in `DOCKERHUB_REPO` .
        - **Push**: It uses the `docker push` command to push the Docker image to the Docker Hub repository specified in `DOCKERHUB_REPO`.
 
    - **Post-Build Actions**:
