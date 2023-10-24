@@ -41,3 +41,11 @@ Before using this Jenkinsfile, ensure the following prerequisites:
    - **Post-Build Actions**:
      - **success**: If the pipeline execution is successful, it echoes a success message.
      - **failure**: If the pipeline execution fails, it echoes a failure message.
+
+## Usage
+
+1. Ensure that your Jenkins environment is properly set up with Docker and Pipeline plugins installed and configured.
+
+2. Create a Dockerfile for your application and place it in your source code repository.
+
+3. Set up Docker Hub credentials in Jenkins with the ID 'dockerhub'.
