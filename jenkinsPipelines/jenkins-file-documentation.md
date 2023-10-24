@@ -53,3 +53,10 @@ Before using this Jenkinsfile, ensure the following prerequisites:
 4. Configure the `DOCKERHUB_REPO` environment variable in the Jenkinsfile with the name of your Docker Hub repository.
 
 5. Execute the Jenkins pipeline. This will automatically build and push your Docker image to the specified Docker Hub repository.
+
+## Additional Notes
+
+- The Dockerfile and source code should be in the workspace directory.
+- Ensure correct Docker Hub credentials in Jenkins for proper execution.
+
+This Jenkinsfile simplifies Docker image management, ensuring your application is readily available for deployment and distribution.
