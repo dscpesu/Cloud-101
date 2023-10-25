@@ -64,6 +64,20 @@
 
 **Usage:** `VOLUME /path/to/volume`
 
+## Building the Docker Image
+
+**Purpose:** Building a Docker image packages an application and its dependencies.
+
+**Note:** Change to the directory that contains your Dockerfile and application code.
+
+**Usage:** `docker build -t "Image-Name:tag"`
+
+## Running the Docker Image
+
+**Purpose:** This creates an isolated, consistent environment for executing the application, simplifying deployment and scaling.
+
+**Usage:** `docker run "Image-Name"`
+
 ## Additional Information
 
 The above mentioned commands are the most commonly used Dockerfile commands. Do refer to the official Docker documentation for a more comprehensive list with detailed explanation.
