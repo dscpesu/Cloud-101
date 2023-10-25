@@ -1,7 +1,7 @@
 # Use an official Ruby image as the base image (here 2.7 is being used)
 FROM ruby:2.7
 
-# FROM ruby:latest (the latest Ruby image will be used)
+# FROM ruby:latest (to use the latest Ruby image, run this command instead)
 
 # Set the working directory in the container 
 WORKDIR /app
