@@ -19,6 +19,12 @@ Docker is a containerization platform that allows you to package applications an
 
 **7.** Optimized Dockerfile for Nextjs applications
 
+**8.** React
+
+**9.** Ruby
+
+**10.**  .Net
+
 ...Fill this section as you add support for more languages
 
 ## Contributing
